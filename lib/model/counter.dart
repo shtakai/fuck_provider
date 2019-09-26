@@ -5,11 +5,7 @@ class Counter with ChangeNotifier {
 
   Counter(this._counter);
 
-  int get counter => _counter;
-
-  set counter(int value) {
-    _counter = value;
-  }
+  int get counter => this._counter;
 
   void inclement() {
     _counter++;

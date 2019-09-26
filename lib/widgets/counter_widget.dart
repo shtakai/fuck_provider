@@ -1,8 +1,12 @@
 import 'package:flutter/cupertino.dart';
+import 'package:fuck_provider/model/counter.dart';
+import 'package:provider/provider.dart';
 
 class CounterWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var counter = Provider.of<Counter>(context);
+
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
@@ -13,7 +17,7 @@ class CounterWidget extends StatelessWidget {
           ),
         ),
         Text(
-          'COUNT',
+          'COUNT ${counter.counter}',
           style: TextStyle(
             fontSize: 30.0,
           ),
