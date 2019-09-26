@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fuck_provider/widgets/counter_page.dart';
+import 'package:fuck_provider/widgets/counter_widget.dart';
 
 void main() => runApp(MyApp());
 
